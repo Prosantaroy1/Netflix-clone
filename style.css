@@ -79,9 +79,109 @@
     font-size: 16px;
     font-weight: bold;
     border-radius: 8px;
-    padding: 16px 18px;
+    padding:  18px;
 }
 
 /*main section styles*/
+.net-main{
+    color: white;
+    background-color: black;
+}
+.sec-width{
+    border-top: 8px solid rgb(56, 56, 56);
+}
+.sec-width2{
+    border-top: 8px solid rgb(56, 56, 56);
+    border-bottom: 8px solid rgb(57, 57, 57);
+}
+.main-sec1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5% 12%;
+    gap: 20px;
+}
+.sec-title{
+    font-size: 44px;
+    font-family: "Radio Canada Big", sans-serif;
+    font-weight: bolder;
+    padding-bottom: 18px;
+}
+.sec-sub-title{
+    font-size: 24px;
+    font-weight: 700;
+    
+}
+
 
 /*footer section*/
+.net-footer{
+    background-color: black;
+    color: white;
+    padding: 5% 12%;
+}
+.net-footer a{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.link-sec{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 28px 0px;
+}
+.link-div{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.net-footer h4{
+    color: white;
+}
+
+/*responsive style*/
+@media only screen and (max-width: 550px) {
+    /*header*/
+    .hd-banner{
+        padding-top: 38%;
+    }
+    .net-nav{
+       width: 100%;
+       padding: 5px 10px;
+    }
+    .hd-title{
+        font-size: 20px;
+    }
+    .hd-title-last{
+        font-size: 14px;
+    }
+    .banner-div{
+        flex-direction: column;
+        gap: 5px;
+    }
+    .banner-div{
+        display: flex;
+        gap: 5px;
+    }
+    /*main*/
+    .main-sec1{
+       flex-wrap: wrap;
+    }
+    img{
+        width: 100%;
+    }
+    .sec-title{
+        font-size: 18px;
+    }
+    .sec-sub-title{
+        font-size: 16px;
+    }
+    .sec1-video{
+        width: 100%;
+    }
+    /*footer*/
+    .link-sec{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+    }
+}
